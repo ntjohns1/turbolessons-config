@@ -20,35 +20,12 @@ spring:
       redis:
         enabled: false
       routes:
-        - id: quotes
-          uri: http://localhost:8085
-          predicates:
-            - Path=/quotes/**
-          filters:
-            - TokenRelay=
         - id: events
           uri: http://localhost:5001
           predicates:
             - Path=/api/lesson/**
           filters:
             - TokenRelay=
-  security:
-    oauth2:
-      client:
-        provider:
-          keycloak:
-            issuer-uri: http://localhost:8083/auth/realms/lsa
-        registration:
-          quotes-client:
-            provider: keycloak
-            client-id: quotes-client
-            client-secret: 0e082231-a70d-48e8-b8a5-fbfb743041b6
-            scope:
-              - email
-              - profile
-              - roles
-              - openid
----
 security:
   oauth2:
     client:
