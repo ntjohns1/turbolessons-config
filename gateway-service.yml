@@ -26,11 +26,10 @@ spring:
             - Path=/api/lesson/**
           filters:
             - TokenRelay=
-            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://localhost:8086/"
+            allowedOrigins: "*"
             allowedMethods:
             - GET
             - POST
