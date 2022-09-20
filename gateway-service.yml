@@ -35,19 +35,20 @@ spring:
             - POST
             - PUT
             - DELETE
-security:
-  oauth2:
-    client:
-      provider:
-        keycloak:
-          issuer-uri: http://localhost:8083/auth/realms/lsa
-      registration:
-        event-service:
-          provider: keycloak
-          client-id: event-service
-          client-secret: 3F2275wzaP7AkhEIeiOjePffT8eYruFs
-          scope:
-            - email
-            - profile
-            - roles
-            - openid
+
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8083/auth/realms/lsa
+        registration:
+          event-service:
+            provider: keycloak
+            client-id: event-service
+            client-secret: 3F2275wzaP7AkhEIeiOjePffT8eYruFs
+            scope:
+              - email
+              - profile
+              - roles
+              - openid
