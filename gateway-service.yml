@@ -29,7 +29,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: *
+            allowedOrigins: "*"
             allowedMethods:
             - GET
             - POST
