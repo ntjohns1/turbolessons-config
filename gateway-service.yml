@@ -24,17 +24,17 @@ spring:
           uri: http://localhost:5001
           predicates:
             - Path=/api/lesson/**
-#          filters:
-#            - TokenRelay=
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods:
-            - GET
-            - POST
-            - PUT
-            - DELETE
+          filters:
+            - TokenRelay=
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:
+#            - GET
+#            - POST
+#            - PUT
+#            - DELETE
   security:
     oauth2:
       client:
