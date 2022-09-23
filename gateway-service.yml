@@ -24,8 +24,8 @@ spring:
           uri: http://localhost:5001
           predicates:
             - Path=/api/lesson/**
-          filters:
-            - TokenRelay=
+#          filters:
+#            - TokenRelay=
       globalcors:
         corsConfigurations:
           '[/**]':
