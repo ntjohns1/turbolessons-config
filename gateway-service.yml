@@ -17,6 +17,8 @@ spring:
     name: gateway-service
   cloud:
     gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
       redis:
         enabled: false
       routes:
@@ -27,12 +29,9 @@ spring:
           filters:
             - TokenRelay=
       globalcors:
-        default-filters:
-          - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://localhost:3000"
-            allowedHeaders: "*"
+            allowedOrigins: "*"
             allowedMethods: "*"
   security:
     oauth2:
