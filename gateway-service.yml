@@ -33,9 +33,7 @@ spring:
           '[/**]':
             allowedOrigins: "http://localhost:3000"
             allowedHeaders: "*"
-            allowedMethods:
-              - GET
-              - POST
+            allowedMethods: "*"
   security:
     oauth2:
       client:
