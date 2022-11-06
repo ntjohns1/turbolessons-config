@@ -1,31 +1,42 @@
 logging:
-    level:
-        org:
-            hibernate:
-                type: debug
-            springframework:
-                security: debug
-                web:
-                    client: DEBUG
+  level:
+    org:
+      hibernate:
+        type: debug
+      springframework:
+        security: debug
+        web:
+          client: DEBUG
 okta:
-    oauth2:
-        client-id: '{cipher}0263ec52c722b78f8cd7b5a06766677101a20fcce3c107513237d1edc1146528cb94a7558968132f1a2b3fbf788c92ab'
-        client-secret: '{cipher}78df39a960fa99aaf90958960b9b12c05e24a3e44d24c9c6311f2495cef372586abab56b697b7c09e185a0c1bcdbfee9e2e3c04c5607d10ea0216202b9c2405c'
-        issuer: '{cipher}fe221f8051930c24e01669628a54580f0eb97be70321daee9ca4d91db0e98edc11444df940dcf08d777d899361cf02655f11c3186b17cddf678849972697c891'
-        pkce-always: false
+  oauth2:
+    client-id: '{cipher}0263ec52c722b78f8cd7b5a06766677101a20fcce3c107513237d1edc1146528cb94a7558968132f1a2b3fbf788c92ab'
+    client-secret: '{cipher}78df39a960fa99aaf90958960b9b12c05e24a3e44d24c9c6311f2495cef372586abab56b697b7c09e185a0c1bcdbfee9e2e3c04c5607d10ea0216202b9c2405c'
+    issuer: '{cipher}fe221f8051930c24e01669628a54580f0eb97be70321daee9ca4d91db0e98edc11444df940dcf08d777d899361cf02655f11c3186b17cddf678849972697c891'
+    pkce-always: false
 spring:
-    cache:
-        type: NONE
-    datasource:
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        password: password
-        url: jdbc:mysql://localhost:3306/lssDB?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-        username: root
-    jpa:
-        hibernate:
-            ddl-auto: update
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.MySQL5Dialect
-                format_sql: true
-        show-sql: true
+  cache:
+    type: NONE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: password
+    url: jdbc:mysql://localhost:3306/lssDB?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
+  cloud:
+    gateway:
+      redis:
+        enabled: false
+      routes:
+        - id: events
+          uri: http://localhost:5001
+          predicates:
+            - Path=/api/lesson/**
+          filters:
+            - TokenRelay=
