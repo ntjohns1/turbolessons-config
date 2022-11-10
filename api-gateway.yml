@@ -1,6 +1,9 @@
 spring:
   security:
     oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: '{cipher}f211af020a7b84e951b6c9aea5fb57bec43ac63b08adbb0005cbac191c59bcfb90cec82efe6bdf0c1987b4982006557d60d6356594a8f6d3244fc75990c423f0'
       client:
         provider:
           okta:
@@ -30,8 +33,5 @@ spring:
             - Path=/api/**
           filters:
             - TokenRelay=
-okta:
-  oauth2:
-    issuer: https://dev-78958050.okta.com/oauth2/default
 
 
