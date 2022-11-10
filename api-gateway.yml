@@ -30,6 +30,8 @@ spring:
             - Path=/api/**
           filters:
             - TokenRelay=
-
+okta:
+  oauth2:
+    issuer: https://dev-78958050.okta.com/oauth2/default
 
 
