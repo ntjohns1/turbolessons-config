@@ -1,22 +1,4 @@
 spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: '{cipher}f211af020a7b84e951b6c9aea5fb57bec43ac63b08adbb0005cbac191c59bcfb90cec82efe6bdf0c1987b4982006557d60d6356594a8f6d3244fc75990c423f0'
-      client:
-        provider:
-          okta:
-            issuer-uri: '{cipher}b2c04dcbd25c539399855dfd79cd4f00fee512ace8bef69d6363f09cd08a729c2ba20196e307d4a4b415aae1379a5d209218499b803d280c2456f02d4b93e060'
-            user-name-attribute: email
-        registration:
-          okta:
-            client-id: '{cipher}1206d8955c158a65d4e96463c7a78a68237763866d99ef87a3bce7dd2e8749310ac1a3b97bd6393fa31e0b25cb0848d5'
-            client-secret: '{cipher}7482cce38d07a0821be898d1213143cba46d6e83f419261ed2f7ad4022608d97fef68b3071f8591776c94ff9fdfaa9b2fdf6573ec7bf2dad973eca3ad41d6144'
-            scope:
-              - email
-              - openid
-              - profile
   cloud:
     gateway:
       routes:
@@ -25,13 +7,14 @@ spring:
           predicates:
             - Path=/api/lesson/**
           filters:
-            # Include the access token as a Bearer token
             - TokenRelay=
-        - id: message-service
-          uri: http://localhost:8000/
-          predicates:
-            - Path=/api/**
-          filters:
-            - TokenRelay=
-
-
+okta:
+  oauth2:
+    issuer: '{cipher}e342d63f08b35b21180353071f27cf8ee7f9ebf83402caf48518812b6578df58bd2c67bc77e6a796100c3568be3e3216c5e2ebc9848dddaaad432e71d33260b7'
+    client-secret: '{cipher}4e9b8fd42f3fc3e95a99d5e6cd5cf9f36d646ccd95b6420da927f04adbe7d16f2fb9cfd02ce76fe4a1662c3fb855744c8fae4d009f4a578b48f5a416f58f825a'
+    client-id: '{cipher}8a36be7d0843edb4f968af444d0d2d3d282a2a75ec3f4e848ebe8039a5c4facc5471768902ea23174dcb80e59cd8e148'
+logging:
+  level:
+    root: WARN
+    org:
+      springframework: INFO
