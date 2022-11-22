@@ -1,0 +1,26 @@
+server:
+  error:
+    include-message: always
+  port: 5004
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  cloud:
+    gateway:
+      enabled: false
+      redis:
+        enabled: false
+  datasource:
+    password: password
+    url: jdbc:mysql://localhost:3306/lsa_videos?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
