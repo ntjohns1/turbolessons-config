@@ -23,3 +23,6 @@ okta:
     issuer: '{cipher}113d90580a87a7c550fa52cc9e1982da5f5910b180347de2c4a0c8463d57a255d825dacd392f087b9b7dd99ea95b7dbcfad29b563f435e216af6707d245032d8'
     client-secret: '{cipher}e030464df7f691739c6c52e45baff2672a4d00a029375eb23517ffb75b2a3091f8b6bf6b93d2d5700e8f126dda3a49f6a4f905bd6d384148b14065949948ec48'
     client-id: '{cipher}2b9c7b53dfd15865d55dce82657854fc9aecd7322548f402ace2006903c1118d1da7fa9bee39f20c836df948793bbecf'
+broker:
+  relay:
+    host: ${BROKER_HOST:localhost}

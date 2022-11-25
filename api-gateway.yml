@@ -14,6 +14,12 @@ spring:
             - Path=/api/users/**
           filters:
             - TokenRelay=
+        - id: message-service
+          uri: lb://message-service
+          predicates:
+            - Path=/**
+          filters:
+            - TokenRelay=
 eureka:
   client:
     serviceUrl:
