@@ -17,7 +17,7 @@ spring:
         - id: message-service
           uri: lb://message-service
           predicates:
-            - Path=/chat
+            - Path=/ws/**, /api/messages/**
           filters:
             - TokenRelay=
 eureka:
