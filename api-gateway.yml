@@ -15,7 +15,7 @@ spring:
           filters:
             - TokenRelay=
         - id: message-service
-          uri: lb://message-service
+          uri: lb:ws://message-service
           predicates:
             - Path=/ws/**, /api/messages/**
           filters:
