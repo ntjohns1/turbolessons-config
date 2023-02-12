@@ -20,12 +20,6 @@ spring:
             - Path=/api/messages/**
           filters:
             - TokenRelay=
-        - id: message-socket
-          uri: lb:ws://message-service
-          predicates:
-            - Path=/ws/**
-          filters:
-            - TokenRelay=
 eureka:
   client:
     serviceUrl:
