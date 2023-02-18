@@ -1,6 +1,14 @@
 spring:
   cloud:
+    discovery:
+      client:
+        simple:
+          enabled: true
+          instancesUrl: http://localhost:8761/eureka/apps/
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: event-service
           uri: lb://event-service
