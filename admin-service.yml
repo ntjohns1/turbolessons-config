@@ -1,0 +1,22 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 5002
+okta:
+  oauth2:
+    issuer: '{cipher}98c12f0f2d6df728adfae45cba8d80a569b62da571b88d234746fe8055b357d2211bb8ee4c161cf4af79bf63801b7f6acf4f71a2ca0df3a41c852bfcb6d64f8f'
+    client-secret: '{cipher}a08b2416ea77d314a22d17e491e70d7e0a3a0e17d0e06edcdf81a07b9987ef7c936af0ac6142fdab27dcc07286e393e0e8afd6ca510496c7e31d31eb114d0622'
+    client-id: '{cipher}7fe21e240e7d5edf75395e355c90e12a3f89af2cf376606601f36fa7576a62d2abe142013086c42e89a7684ab5a70fcd'
+  client:
+    token: '{cipher}692c03dfb23f1d882a9f764551683d6616ecf640e6619caf8610f77640fe062d8774778b263191e834d5adaa965446110a009abc1379e23755c73df53811f33d'
+    orgUrl: '{cipher}77a9fd491c9c191b3f309a9e228a636425fd7460b7cefa4f5b3f9a8364c21462d2ce1a9b7b67687f08df488e98fcde44'
+logging:
+  level:
+    root: WARN
+    org:
+      springframework: INFO
+      com.okta.sdk: DEBUG
+      org.springframework.security: DEBUG
