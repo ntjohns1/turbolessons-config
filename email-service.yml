@@ -1,0 +1,35 @@
+attachment:
+    invoice: path_to_file
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 5003
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: nelsontjohns@gmail.com
+        password: '{cipher}0bc76c2d0eaee98d6d4dd80dc57ad4be21b36bdb84958d0e50a4b928bd2ea14d30007fd0dbf3fb95f1cb9ef2762cfac6'
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+        templates:
+            path: mail-templates
+okta:
+    oauth2:
+        issuer: '{cipher}98c12f0f2d6df728adfae45cba8d80a569b62da571b88d234746fe8055b357d2211bb8ee4c161cf4af79bf63801b7f6acf4f71a2ca0df3a41c852bfcb6d64f8f'
+        client-secret: '{cipher}05c75749562c648fb58a9728adeab259ae9012ddb897f58ca1bcf8b62f00ad881bff953e8beef453f7b6f9387a42e7f39ae03c640519afb04b0b547434546d01'
+        client-id: '{cipher}4e8899e9868d17161b188d9cb29854df6b8d3b9e8dc563df1401653e2051baf6cdf59727160f4a976ebb4b13a35343e1'
