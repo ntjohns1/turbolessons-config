@@ -27,7 +27,7 @@ spring:
                     starttls:
                         enable: true
         templates:
-            path: mail-templates
+            path: /templates/
 okta:
     oauth2:
         issuer: '{cipher}98c12f0f2d6df728adfae45cba8d80a569b62da571b88d234746fe8055b357d2211bb8ee4c161cf4af79bf63801b7f6acf4f71a2ca0df3a41c852bfcb6d64f8f'
