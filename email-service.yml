@@ -1,0 +1,43 @@
+attachment:
+  invoice: path_to_file
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 5003
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: '{cipher}0bc76c2d0eaee98d6d4dd80dc57ad4be21b36bdb84958d0e50a4b928bd2ea14d30007fd0dbf3fb95f1cb9ef2762cfac6'
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    templates:
+      path: /templates/
+    username: nelsontjohns@gmail.com
+  main:
+    web-application-type: none
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            token-uri: https://dev-78958050.okta.com/oauth2/default/v1/token
+        registration:
+          okta:
+            authorization-grant-type: client_credentials
+            client-id: '{cipher}42864552f166eb525eed48ce41b9fb0cf8d1ca9875649aec785b18ef685d91219df4dc4cf386a0ab2ad7d0830c7d9ea2'
+            client-secret: '{cipher}c7d0c94a6d23c3b0a6f4b5895da586417d0932fd345cb871b41b290c03082ffeb280720e7e8ef48a8130d58a6dbe34ecfefc3698f90e6f4b6d436ec3060b7292'
