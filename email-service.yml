@@ -26,7 +26,7 @@ spring:
           starttls:
             enable: true
     templates:
-      path: /templates/
+      path: mail-templates
     username: nelsontjohns@gmail.com
   main:
     web-application-type: none
