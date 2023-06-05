@@ -5,7 +5,7 @@ spring:
         - id: event-service
           uri: lb://event-service
           predicates:
-            - Path=/api/lesson/**
+            - Path=/api/lessons/**
           filters:
             - TokenRelay=
         - id: admin-service
