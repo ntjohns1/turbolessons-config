@@ -23,3 +23,10 @@ okta:
     issuer: '{cipher}98c12f0f2d6df728adfae45cba8d80a569b62da571b88d234746fe8055b357d2211bb8ee4c161cf4af79bf63801b7f6acf4f71a2ca0df3a41c852bfcb6d64f8f'
     client-secret: '{cipher}05c75749562c648fb58a9728adeab259ae9012ddb897f58ca1bcf8b62f00ad881bff953e8beef453f7b6f9387a42e7f39ae03c640519afb04b0b547434546d01'
     client-id: '{cipher}4e8899e9868d17161b188d9cb29854df6b8d3b9e8dc563df1401653e2051baf6cdf59727160f4a976ebb4b13a35343e1'
+logging:
+  level:
+    root: WARN
+    org:
+      springframework: INFO
+      com.okta.sdk: DEBUG
+      org.springframework.security: DEBUG
