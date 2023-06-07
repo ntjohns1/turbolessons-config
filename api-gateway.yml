@@ -26,6 +26,12 @@ spring:
             - Path=/api/email/**
           filters:
             - TokenRelay=
+        - id: video-service
+          uri: lb://video-service
+          predicates:
+            - Path=/api/video/**
+          filters:
+            - TokenRelay=
 eureka:
   client:
     serviceUrl:
