@@ -29,7 +29,7 @@ spring:
         - id: video-service
           uri: lb://video-service
           predicates:
-            - Path=/api/video/**
+            - Path=/api/video/**, /api/video
           filters:
             - TokenRelay=
 eureka:
