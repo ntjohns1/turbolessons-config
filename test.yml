@@ -1,3 +1,10 @@
+google:
+    bucket:
+        name: '{cipher}ef43ad0906923b43e40d5bcd53944c7e0d4b0a7d80055d42d6d0afd78e3edd4c0b45c0f41fb09a9bbdec4cfe4713e5f1'
+    credentials:
+        path: '{cipher}d7652c751d04b0b02abcb5902383725f345fb63f875b766a9871bcb29b0bf511a9adfe6713c3fb8d6f13bc8266f9b8d3b6aabb15c8d0ecbee6cbfa954b37a5f875474b9e5c3920653d62f9b516f2308caceb62c59b3b9e75481916a299d848023fbf62acd806b8051af338584b4e67af'
+    project:
+        id: '{cipher}2840d7a3bc7703766d590cf7326785c07e60e90c205c2cb5f1ce4197c75cd7e385111e47c5f1a3ba7a9d25078cbf7fed'
 spring:
     codec:
         multipart:
