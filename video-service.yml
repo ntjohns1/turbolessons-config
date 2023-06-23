@@ -7,6 +7,11 @@ server:
       enabled: false
       redis:
         enabled: false
+  codec:
+    multipart:
+      enabled: true
+      max-parts: -1
+      max-size: -1B
 okta:
   oauth2:
     issuer: '{cipher}113d90580a87a7c550fa52cc9e1982da5f5910b180347de2c4a0c8463d57a255d825dacd392f087b9b7dd99ea95b7dbcfad29b563f435e216af6707d245032d8'

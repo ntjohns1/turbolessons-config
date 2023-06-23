@@ -1,0 +1,6 @@
+spring:
+    codec:
+        multipart:
+            enabled: true
+            max-parts: -1
+            max-size: -1B
