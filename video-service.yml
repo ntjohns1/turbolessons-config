@@ -22,7 +22,6 @@ logging:
     root: WARN
     org:
       springframework: INFO
-      springframework.security: DEBUG
     com.okta.sdk: DEBUG
     com.noslen.videoservice: DEBUG
 google:
