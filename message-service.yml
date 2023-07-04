@@ -8,7 +8,7 @@ spring:
         enabled: false
   data:
     mongodb:
-      uri: mongodb://root:example@messagedb:5055/lsa_message_plt
+      uri: mongodb://root:example@messagedb:27017/lsa_message_plt
 okta:
   oauth2:
     issuer: '{cipher}113d90580a87a7c550fa52cc9e1982da5f5910b180347de2c4a0c8463d57a255d825dacd392f087b9b7dd99ea95b7dbcfad29b563f435e216af6707d245032d8'

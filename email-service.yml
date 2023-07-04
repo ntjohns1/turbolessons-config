@@ -14,7 +14,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://root:example@emaildb:5053/lsa_email
+      uri: mongodb://root:example@emaildb:27017/lsa_email
   jpa:
     hibernate:
       ddl-auto: update
