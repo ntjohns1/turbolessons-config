@@ -12,7 +12,7 @@ spring:
         enabled: false
   datasource:
     password: root_password
-    url: jdbc:mysql://lessondb:5051/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    url: jdbc:mysql://lessondb:3306/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
     username: root
   jpa:
     hibernate:
