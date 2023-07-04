@@ -14,13 +14,13 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://emaildb:27017/lsa_email
+      uri: mongodb://root:example@emaildb:27017/lsa_email
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+        dialect: org.hibernate.dialect.MongDB
     show-sql: true
   mail:
     host: smtp.gmail.com
