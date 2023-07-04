@@ -1,5 +1,9 @@
 server:
   port: 5001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka/
 spring:
   cloud:
     gateway:
@@ -8,7 +12,7 @@ spring:
         enabled: false
   datasource:
     password: password
-    url: jdbc:mysql://localhost:3306/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    url: jdbc:mysql://lessondb:3306/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
     username: root
   jpa:
     hibernate:
