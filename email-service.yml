@@ -15,13 +15,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:example@emaildb:27017/lsa_email
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MongDB
-    show-sql: true
   mail:
     host: smtp.gmail.com
     password: '{cipher}0bc76c2d0eaee98d6d4dd80dc57ad4be21b36bdb84958d0e50a4b928bd2ea14d30007fd0dbf3fb95f1cb9ef2762cfac6'
