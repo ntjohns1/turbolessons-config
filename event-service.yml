@@ -11,7 +11,7 @@ spring:
       redis:
         enabled: false
   datasource:
-    password: password
+    password: root_password
     url: jdbc:mysql://lessondb:3306/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
     username: root
   jpa:
