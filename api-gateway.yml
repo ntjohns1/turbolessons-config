@@ -38,8 +38,6 @@ eureka:
       defaultZone: ${EUREKA_URI:http://service-registry:8761/eureka}
     healthcheck:
       enabled: true
-  instance:
-    prefer-ip-address: true
 okta:
   oauth2:
     issuer: '{cipher}e342d63f08b35b21180353071f27cf8ee7f9ebf83402caf48518812b6578df58bd2c67bc77e6a796100c3568be3e3216c5e2ebc9848dddaaad432e71d33260b7'
