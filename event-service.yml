@@ -31,7 +31,12 @@ logging:
   level:
     root: WARN
     org:
-      springframework: INFO
-      com.okta.sdk: DEBUG
-      org.springframework.security: DEBUG
-    com.noslen.adminservice.config.RequestLoggingConfig: INFO
+      springframework: DEBUG
+      okta.sdk: DEBUG
+      springframework.security: DEBUG
+      hibernate: DEBUG
+    com:
+      noslen:
+        adminservice:
+          config:
+            RequestLoggingConfig: INFO
