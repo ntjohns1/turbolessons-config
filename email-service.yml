@@ -11,11 +11,11 @@ eureka:
       defaultZone: http://service-registry:8761/eureka/
 server:
   port: 5003
-#  ssl:
-#    key-store-type: PEM
-#    key-store: /etc/letsencrypt/live/turbolessons.com/fullchain.pem
-#    key-store-password: ""
-#    key-alias: ""
+  ssl:
+    key-store-type: PEM
+    key-store: /etc/letsencrypt/live/turbolessons.com/fullchain.pem
+    key-store-password: ""
+    key-alias: ""
 spring:
   cloud:
     gateway:
