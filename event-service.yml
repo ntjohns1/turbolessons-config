@@ -3,8 +3,8 @@ server:
   ssl:
     key-alias: www.turbolessons.com
     key-store: /tmp/www.turbolessons.com.keystore
-    key-store-password: ‘{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624’
-    key-password: ‘{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624’
+    key-store-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
+    key-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
 eureka:
   client:
     serviceUrl:
