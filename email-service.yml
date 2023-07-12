@@ -13,7 +13,7 @@ server:
   port: 5003
   ssl:
     key-store-type: PEM
-    key-store: /etc/letsencrypt/live/www.turbolessons.com
+    key-store: /etc/letsencrypt/live/www.turbolessons.com-0001
     key-store-password: ""
     key-alias: ""
 spring:
