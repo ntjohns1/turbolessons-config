@@ -24,7 +24,7 @@ spring:
         - id: message-service
           uri: lb://message-service
           predicates:
-            - Path=/api/messages/**, /ws/messages
+            - Path=/api/messages/**, /ws/messages/**
           filters:
             - TokenRelay=
         - id: email-service
