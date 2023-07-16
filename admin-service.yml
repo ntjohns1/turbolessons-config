@@ -35,3 +35,6 @@ logging:
     root: WARN
     org:
       springframework: INFO
+    com:
+      noslen:
+        adminservice: DEBUG

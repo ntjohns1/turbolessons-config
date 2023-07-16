@@ -55,3 +55,6 @@ logging:
     root: WARN
     org:
       springframework: INFO
+    com:
+      noslen:
+        apigateway: DEBUG
