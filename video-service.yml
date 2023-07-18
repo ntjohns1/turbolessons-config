@@ -40,4 +40,4 @@ google:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://service-registry:8761/eureka/
+      defaultZone: https://service-registry:8761/eureka/

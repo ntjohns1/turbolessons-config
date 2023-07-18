@@ -3,7 +3,7 @@ eureka:
     fetchRegistry: false
     registerWithEureka: false
     serviceUrl:
-      defaultZone: http://service-registry:8761
+      defaultZone: https://service-registry:8761
   instance:
     hostname: service-registry
 server:
