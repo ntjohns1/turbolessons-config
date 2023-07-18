@@ -52,7 +52,7 @@ okta:
     client-id: '{cipher}8a36be7d0843edb4f968af444d0d2d3d282a2a75ec3f4e848ebe8039a5c4facc5471768902ea23174dcb80e59cd8e148'
 logging:
   level:
-    root: DEBUG
+    root: WARN
     org:
       springframework: INFO
     com:
