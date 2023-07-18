@@ -32,9 +32,9 @@ okta:
     orgUrl: '{cipher}77a9fd491c9c191b3f309a9e228a636425fd7460b7cefa4f5b3f9a8364c21462d2ce1a9b7b67687f08df488e98fcde44'
 logging:
   level:
-    root: DEBUG
+    root: WARN
     org:
-      springframework: WARN
+      springframework: INFO
     com:
       noslen:
         adminservice: DEBUG
