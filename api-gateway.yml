@@ -35,7 +35,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:https://service-registry:8761/eureka}
+      defaultZone: ${EUREKA_URI}
     healthcheck:
       enabled: true
 okta:
