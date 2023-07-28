@@ -1,14 +1,9 @@
 server:
   port: 5005
-  ssl:
-    key-alias: www.turbolessons.com
-    key-store: /tmp/www.turbolessons.com.keystore
-    key-store-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
-    key-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://service-registry:8761/eureka/
+      defaultZone: http://service-registry:8761/eureka/
 spring:
   cloud:
     gateway:
@@ -22,9 +17,9 @@ spring:
     check-template-location: false
 okta:
   oauth2:
-    issuer: '{cipher}113d90580a87a7c550fa52cc9e1982da5f5910b180347de2c4a0c8463d57a255d825dacd392f087b9b7dd99ea95b7dbcfad29b563f435e216af6707d245032d8'
-    client-secret: '{cipher}e030464df7f691739c6c52e45baff2672a4d00a029375eb23517ffb75b2a3091f8b6bf6b93d2d5700e8f126dda3a49f6a4f905bd6d384148b14065949948ec48'
-    client-id: '{cipher}2b9c7b53dfd15865d55dce82657854fc9aecd7322548f402ace2006903c1118d1da7fa9bee39f20c836df948793bbecf'
+    issuer: '{cipher}AQCMaP0y17ADibcNsRpfVWckVMslqKKverx+86Fd4VNaqFYuYPTSz6MdyJPqJpE8RtR+7gIP4BX9fBP36VuH40/dBcO5MMHyICWCSOhnptQrJbwOINN0eH/tz5CgoEpUG7gIQEqrLJ1xKhNVE50FHucSHFHPT56uMCRa5zRj0GKKBWRJhdntXfD799l23n7WeDgot7CURfv2mdLNBUFgYL1PO7B+ySLr3TkwRU8KV2QmhpB7s3+uksGdS5A5Rv73oWrbPz0V13uGnmm7pw4l/uapf1uuOxGTO3n8CYjTLYfJ1YTzG4l83OTHWeT/dm/boVEh1Hw1Czadt9SQpImPpf4KTkd28lTUqF/yCjJrhRFDYURSK+v7Pd61VJem7gyAkbbni2EdnobZ4CUzUIEnyZnuP3MKDKofwG950x9RC3QUJQ'
+    client-secret: '{cipher}AQAMvfiUObuOqmoEtI/THL3UZRW3/6o1CSq1iWSeGkGrR8qeKGyxbtcnVW4Rgo27zfe7CNfXN2qCVYJClthPAfKGJqILxbry2j4R6uCM5D19AVU/hTIMjeOBmUbcW/fIbRPjNoeahwvHGrbek5yKyzTkJR61d3QIQMudDM+W1Zwwg3yepaAdyHCF9OvE8Xh7QXBjgdr0p9bQO+GPjNyhmQ+ya6HMEjErKfUK89eay5gNCkjRFoyGZTH86kg6AB7y/BGe4FCuZd9jro/EWUoCI9aT6PUG6XD0smpGN+Xpx7F4jZ0bhuXGFhsclYg81c2+76V+A9wE9gcT0LrlOJdFCbnSzVLZAHFULoWfd1AVu4xpWlFyh7GnorGjuk1NwYrnDqnPll9Kj5nQLu5QeuQPFrW+0Pvvij8ZtZB/p+zgNjybig1Ggn+tLQzFcjfcDAyaNxmTB1bDY0opZACFMtvHSI/PN71CHBdwgGGuThAKASmD8eUYvYrhVPlVW2NILs+ySEY0sbyj2ileQFwXRlMWypxzmZu2AhHfSa7H1hWcBeqtXg'
+    client-id: '{cipher}AQAsBKigGov0QhsZ9Okavp329c+nF2X5CCtzDZRNEqdQ52BNRoLa2mhWUlEkjWkryKAbZYj5jAdplled/iDA2yg+uPX2VDbCpzsfsAYGsqKQsfsnkrz6fGwjEBXZmF4ATgI+ez6TmOGMYWo4/qHssOqmpoNwA7lCvT/D2mt5XEL8YU6vUPRVFkC57+RbZ1ij21fC4j5RTsEYyO+ewV+JFPOOtYT85qCKHtXfhUtnXL85i+Np5mXuPc5YBU12ZLSytvW4182jp5TfQVQF42k5u4jDO5ApKlN8A1lTFIFBdOKwcQQy6xKQVS6EYl4A6JfBkxeEQdCzMX4n573+USvAZXwExVjk/5kx5Y5vBIqeWIHkrnAa6yu+ujxfhYyVCS7UBY6qAvHiYugCEbyJT2y4b4FF'
 logging:
   level:
     root: WARN
