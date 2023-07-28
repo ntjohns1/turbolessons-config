@@ -10,6 +10,7 @@ logging:
     org:
       springframework:
         security: DEBUG
+      springframework.cloud.netflix.eureka: DEBUG
 eureka:
   instance:
     hostname: service-registry

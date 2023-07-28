@@ -25,9 +25,10 @@ okta:
     orgUrl: '{cipher}AQBXehsNazAf2vAy2P4MEaJt+oibV87yxxSrErxfRyBGGDPyXXqU7SvZ29FvKgbIQEBjOWUpvjSqqGRU0WN36OLrrCI9pUHnQ9oCXqu3hLidf6VCmwmQULEiiXTGDJCe3yzEfYvqIe9HAPUaNfkTu0bJ0S3+u6O9reJnK/ATxR7G9NeJlJrXemcckAqmQ0BERnyB3BsBXKBJbkysK0bqJFv6AZ/rc7Dz0zyEF9d41xHzMeEYZ60GQRKOnJAUx3YMs5+mjLevv0ymDXPQM8Bn4jako/xE6whSPN1Md/ZO8sdX+/JORiCPU/rZMoYkJ0LU38D1SoJnk6DSRvrnZjAOKRpZqCmW5CM3hM4BOcWHgUwfCoPo2MVylGUyD0KDgUbGDKCJpAslDMSQW8aTzC9y9oAa'
 logging:
   level:
-    root: DEBUG
+    root: WARN
     org:
-      springframework: WARN
-    com:
-      noslen:
-        adminservice: DEBUG
+      springframework: INFO
+      springframework.cloud.netflix.eureka: DEBUG
+#    com:
+#      noslen:
+#        adminservice: DEBUG
