@@ -1,12 +1,3 @@
-server:
-  error:
-    include-message: always
-  port: 5004
-  ssl:
-    key-alias: www.turbolessons.com
-    key-store: /tmp/www.turbolessons.com.keystore
-    key-store-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
-    key-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
 spring:
   cloud:
     gateway:
@@ -22,9 +13,9 @@ spring:
       max-size: -1B
 okta:
   oauth2:
-    issuer: '{cipher}113d90580a87a7c550fa52cc9e1982da5f5910b180347de2c4a0c8463d57a255d825dacd392f087b9b7dd99ea95b7dbcfad29b563f435e216af6707d245032d8'
-    client-secret: '{cipher}e030464df7f691739c6c52e45baff2672a4d00a029375eb23517ffb75b2a3091f8b6bf6b93d2d5700e8f126dda3a49f6a4f905bd6d384148b14065949948ec48'
-    client-id: '{cipher}2b9c7b53dfd15865d55dce82657854fc9aecd7322548f402ace2006903c1118d1da7fa9bee39f20c836df948793bbecf'
+    issuer: '{cipher}AQAiUmqn7bPao2NvPMw5r1xHp7XTOINrn4GYLputYXtVPVhcg9af9MnElEjxO3bXu2OzNILQL6rn0LoxBGNvivn5jb46uTrAnzg64i3oGA9fWiXDmTTbpskOhANYSlCIZYhwkATsJv5hzkhsCSDTjnGJ3cJxVdM0bouwfRp7HPjpB+CtrpX9pShlL0V9Au2YHfSDeC/RrW0Fv37l9HoyEYFZXCLutGziI17Wv8p2lSuswhkS5Hy5dF7petQlkBHvLYvWoVu4ZFdtjURoiEuWDv2D2bgbfNzKwTZ8CEJLvX316VML7y7spJZ51NpVB02cP1SEnkLg05NlpvmMbNCCKtb2mthbtd/sIk/URXH+6YJizyobi/A607v4P9X0fJcEtM69+5oqrr8hEHZCyF12qUZ8k+1OyXayogtwYuyhBW6aUQ'
+    client-secret: '{cipher}AQCmD4TGNYqa6vsUiJxA7NDSHBhLT6G2jiB41RJzMIvu5z6Pm5gIdGDYNQHz1olfGUxsuFs802zSi/bU+dWXPegiU3ClJGYCa+Dn05TKXj61kWuy6xZr5wMNdfE6jh+z/Nk/QwWDQ+5Xm80EW5GopzrX80qO5ATDleL8cFilAWd6SyQ30WIvnr0NSF/vk7Dfz7sLiduMJccykFa6v69irQI/DTm0XKurFe0sFMVC68NuyfXdFmoWU0M0rxZYNc0339PZa8t0Frt5RpCYRu8oarxCuZaIpLvc/QJv7PdXj/VmCZzB3UfqlXkwN6l951g9deHYjnZnUFoWLtFlAduHsXgD1CU/vOQluWCoP92dVkaIsnnN7lpX5FQ6K9ypOldsj5cHlQG8/D9k7ub2BT1TfsuQ6R6MdjoJHXl3Lxq6hFp0jQ'
+    client-id: '{cipher}AQC3dW7xwTghXajEhebbM9pbE2YrHxcu/WruSiZOd9RT+ZwR8MmEOFDkH5lP2IK2lOgfXvNVz5f3hMnpoawwnX4382XeueuzEwh32H7om/dXU1NQOmk+VmaT0EpXvSzXsXiv5WDFiSUsKPc+IAe+dRkBQRm1GZN3AFtWYDoQ6B1sljfZ0BsfjkBjutV60Zm8MsI6lzPvgAhpdWF0zPFUmgLROM/VF2QVBhiziRMzkYGU4H/lqVx2FhOnKnqZ0/sd20bkag0MNsjLH0MfY0lbCoSSammO6EJh5ZEGheHYxausrW+sgrKnPT/7HzHH2iharJnswp+D5Suhu3LHo+YCVcfItwj2W65SWI/d1NVNNaas6kvM2zFIL7Uthqna85QS8ngTKmxs7Vg9cHmdofHnQcRj'
 logging:
   level:
     root: WARN
@@ -32,11 +23,11 @@ logging:
       springframework: INFO
 google:
   bucket:
-    name: '{cipher}ef43ad0906923b43e40d5bcd53944c7e0d4b0a7d80055d42d6d0afd78e3edd4c0b45c0f41fb09a9bbdec4cfe4713e5f1'
+    name: '{cipher}AQBngFDUKv6wNbcvw80gD8W9XJ9aq2HAwGpY78BCyaTr8Cjq0toOM4kEJPd5Xru9KTrmEPunekuR7zrAXXaRRip3Iz1/qzS5gUdepdCxlAucctsAwy1K62zD75EGOBl/w7GbflOhokW4xsAq6m4C3PpLCa/XIiZZOnIutXwJGC8PdbN2LbYN3pFduvP7yHYdC/s5NPA9o+ss8ybvOLxdwGMb0hWuA47YPNAdGzpc0BF2oAawUJeEheBWBklhAek59Z98F2I4k0988tk4vh1aDBOeu3p52CMBJ+2jluzdbS8tESAXum3ajmkDY8diWEHuMCUl6cD4DtlQaocMkiA/jx3V+k15MK7wi6ZwtnQKXWDTdxIi1bhSHotZbsoWmVE+vWIU1yuJZAbTYz4EdM4i6XVo'
   credentials:
-    path: '{cipher}d7652c751d04b0b02abcb5902383725f345fb63f875b766a9871bcb29b0bf511a9adfe6713c3fb8d6f13bc8266f9b8d3b6aabb15c8d0ecbee6cbfa954b37a5f875474b9e5c3920653d62f9b516f2308caceb62c59b3b9e75481916a299d848023fbf62acd806b8051af338584b4e67af'
+    path: '{cipher}AQCB3+cMII/yQO5O1R5J+FVUN5dFuwzUnfVF9djam4X7uCh0Y+Z+eLBoZL5gbGa91tUdIqFgPUs8l8YbZNiIOCniAR8JagVE50sFN98Teykwp2SlJIMUCfsBfVKj8jlQ+6CiFjGYxqSqfiyEk40/6hbDGQgl+aFD7ehMGZmhS6Gfz45yb0xAY3ln6o/DEecRmuRgee49YR3f1HasQd+n/2yRtUa1FGgBPrpTaETbSWPcuzgzt3/hy3zY/XCL6kidt5yjP+e7izLur7529zdupx+TVSWEoHlLNy3OouNqI0JV8ICAY3kbLQtuGp5ks7xdnqeH+kRAA0GymswDhgbofqJWf84d8WE/GgMtKjCO/zfpnwbyubV4VzbKeUjDatfMvoaQ4yYJfe0E0XRaVLKydPZGfz0n93pCz3CwztY3AcRw6A'
   project:
-    id: '{cipher}2840d7a3bc7703766d590cf7326785c07e60e90c205c2cb5f1ce4197c75cd7e385111e47c5f1a3ba7a9d25078cbf7fed'
+    id: '{cipher}AQBFF0m/cF35s0wITAa8ZNaNGpBVpwDacPDh6a5hmlG20WAGXmt5zkyFQHUvpX3V1bQzozn50LLJtihhFTaqht+5kD9RDicBq2TTopTHSQZLfx8f5AUvBbeeHp9UuThtAp6V/BF25MV0XqxhmPYWSUBMU79RUMqK+Eq0ab/AEP8tM3jSlDF/SQzxM9VB0mz07WvIbOCrC7Ns9yvH2rSeaKHNOJB6Z394htv6UxctCun1PbLVl5xEbDduUJ1z7P5/1CrjaIirZelISIONyf0do8mbCE5LH9gO66VtyirOKM1N3s4WdS1M+5gkCPYIH9AMDNZ86MQZD0g1sSyJcI/huGtrjgqBfcXnd2wqeaMaTjS1ici0RfrqGELdEJH/FifOjXrMZWvAt6RiNHfZ4+qawvAT'
 eureka:
   client:
     serviceUrl:
