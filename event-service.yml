@@ -15,9 +15,9 @@ spring:
       redis:
         enabled: false
   datasource:
-    password: root_password
+    password: '{cipher}AQBkCNRY/0nNk9wohhJx5HLuxIuGE7sPdBrv2OJR13LRk0aBHWXTcsIlqlQTn9mHI8MQ2VhYNjht7pW570Y1Qkq2s/jSCF5WXpb8Io3n2UHagDrV9TsVYNS80qE+7sx15TDY7pCt00L6+nPgcPT7ALQq7eDbLHPh6USbwJ6kBy1DzzyenCqWlC25rhqv/BITRlGBvlgDFMCTSwnnU42bwV+80h10bQTgHkoEcYLVQymI2lDEbNHG/KhzYvJNkRiYufc7/CCrDHaALzPEQa/XC8rBOK2EOnCPKG0zfAKH/0rnnQHJR8/XSMSJFHEr3E+08i4VHqKnBONYH631A8vLLN1H+f4RzrJMdbrgBZCveXfYciPYvnbmoEZ7UaQPwhuE6jeoPg9UwtTtl3cL4TNyj0dP'
     url: jdbc:mysql://lessondb:3306/eventplt?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useLegacyDatetimeCode=false
-    username: root
+    username: '{cipher}AQByaX2G2CYghe9gzVBustEH1vpmb5eChcI0QEYKIcwv0g3HFUtD/NsJ/6W6/hj8UDMJ5x2lUi3tjZKRsMECKvFPMXJ37j+MBcO2GfgnCbkRnrTt5lftRPgeDyd0CG/TN+yqO9UvGgr2x/cLzMgxP3VXoDZ5BrXoKz/rPihAm6/4GkqgNdFOqviUogN4vjN64ri6z2w2dms1oDdimtU48KsPZxYThendkMFQ+doRjMzxGA2+bOfERizMOnTzjCBLhgnuved6Ahv6Dt1zGHY354x7T1Nef0FDlPFUWoRjaibz8FxQg2Hindchbm5UtdECKpKzbjqUO9m6enrTBPd/xAUHFvFbwj2P9c47vjCbxLA2A7KPHqoVZis90KL4bROOOcg'
   jpa:
     hibernate:
       ddl-auto: update
