@@ -3,6 +3,11 @@ eureka:
     serviceUrl:
       defaultZone: http://service-registry:8761/eureka/
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: '{cipher}AQBRgp0t1f2dd+i+uobf95hFm/IZoHUtq9nfEAwztZmeBR5Z30Y/+Ir/n/dEmnJqabp7NYVSqlfB6m15I9VVvfgP7P2+Ixiylt4K1VDnEwWD1/ZCQsWmWshQ0RoqzjZjr6jTJfNsYJNut2jWeNt4UCZB55kU0yfLa1kxArql06n8b1RIGsE3CWfOzaahFz9Lljd8OJyCue0cLpmJQ4tC+nLuRykFmN20QLNUpuZBdHvPGSZLTI3JsC/82ZHzhLaH+DwpaK9jcDrseO23H/bHKPsdobHRkeIoDhnCzmb4iAFM78eIgZQCf5hh3LrNjuRbeMnBT0t9KLbgL1SFGIdjgH8HC5JtzjAhXM5MwthSCznM3cKyVUFYlaJu0pEn3YfeeJp7fiyH59Hgg5cFiuKXJcJHh6tvCDGC2AvINbBYKxxjcM5Ee0uYIHyYYMfQ+CVQuts='
   cloud:
     gateway:
       enabled: false
