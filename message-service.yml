@@ -22,7 +22,8 @@ logging:
   level:
     root: WARN
     org:
-      springframework: INFO
+      springframework:
+        security: DEBUG
     com:
       noslen:
         messageservice: DEBUG
