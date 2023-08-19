@@ -48,8 +48,3 @@ logging:
     root: WARN
     org:
       springframework: INFO
-      springframework.cloud.netflix.eureka: DEBUG
-      springframework.cloud.gateway: DEBUG
-#    com:
-#      noslen:
-#        apigateway: DEBUG
