@@ -9,11 +9,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://service-registry:8761/eureka/
-#  ssl:
-#    key-alias: www.turbolessons.com
-#    key-store: /tmp/www.turbolessons.com.keystore
-#    key-store-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
-#    key-password: '{cipher}3b6994c302f49b0a8ed942f140218cf22f01c3ed8437bb778cdb0511ac6b1624'
 spring:
   cloud:
     gateway:
@@ -25,7 +20,7 @@ spring:
       uri: mongodb://root:example@emaildb:27017/lsa_email?authSource=admin
   mail:
     host: smtp.gmail.com
-    password: '{cipher}AQCnPqdINlpWd+16oNmBgbHZDe61yvsl+19BGYhg01YTTQpFgXdTYfFY0CmY7vUtp+z3F1w5br7H1jl3f+Pkm+cSQWE6TOzpLTlicEw3mxoIRJ4cPXRQHipQKFWwZUcsfzwDuWWQY1dzxKyv9uvZPFk8B3omNOdZHUyDP0Cr//FzMrPld83lmyZHInKev5lgTD+xLNhgF/eQYNvheAlT9+rv+qX3XljVAfH+69t8R4ac+vaWCnaxsY9WPHkRfPB0QvjKRQ5f0w5FllFjN8/aWXp8xggd6j0jqwrjHbUmFKCqCu6J1iBM0E0hr3NHfa/rOnkcAxntOMLNTtehFMfTfYLdfzSqGhIhivci3HQ9BJ4IIQAASv9UK5Mc8eW+v7BFYkBPdrEzQLAnsyGp2nPx3BT9'
+    password: '{cipher}AQACeClIxwzPzjA8zg/X8F7kPM13/RX4qiEZV9DO4FpW2mUvSXFXuhius9BtLTORU52MjCWqoXad+XRkFK8y6VfABb/Vu96Usn0pT2ncqexokaLyHyjUCWBiWwPHQ105JMeq9wMmpoBDFtYDASh11RgBverLCoGYE4nOTdQ+IwwADYAnaQKLb7bZ5geeWIuYpBXlBl/9Efdp8VTqgofUYPzcKJXQo10naNWxgk4uvXWwb04F6APONRax9WCtwkpIvJNnkLeQddek3lylXn9Qx614yfyRA7/MKtgwJ1j4BFp7Id9kOu766Y5ikw2cgXrBmAPNz9CwjvVI68jyRb5vQMQ+fLORJErhxdBqBZaIPdYgoEdetgbX8Fjm38QuE1/IzzClb/OtAwNqgIIo7uMKQUBoOIuj7nlZBqgThnmkBAvCeAN1pbonYISnhwr87BpS2lw'
     port: 587
     properties:
       mail:
