@@ -15,6 +15,9 @@ spring:
         enabled: false
   mustache:
     check-template-location: false
+  jackson:
+    mapper:
+      propagate-transient-marker: true
 okta:
   oauth2:
     issuer: '{cipher}AQBFpKram6yI1T/fKIuPGH+n2YD1WTQ0Kd30tUjOSTqN5Sts/NkPsN7RR4+FSxtizbgR7/S8wNh929UjTbYYUxkEjy6KE3NqEWtgRBTEtLe8XUZGxHkZ8i4MgrJ0YEXfkBqiCXG2R22kO8azttk9CjLBhUAX74A4mSaPgqBLpwjMQKzQ5WI/LLCQz7Xlp8xWYIUg7ITdKulxKjCfs5HiiPu3SVnb0rlVRRA7mZfYde2eb/t9juIKPBKCJromXaK5tEYd/4h3rY0ygcPQtwfbUCxUMMe87vTSG26uj75E5EtwpJt+nT86HIJtH+QmNj63d2NbDuV4UZw0oDtASSlg72+Q2Ja0amnARbRIJuMmLx90XOPgrctAw6SFwVsrXL5z29gbS/fyYTcgpM8e7DQZlvfl/LI9+2J02xP9krjRTou2ZQ=='
