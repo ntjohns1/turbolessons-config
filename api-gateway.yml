@@ -35,7 +35,7 @@ spring:
         - id: payment-service
           uri: lb://payment-service
           predicates:
-            - Path=/api/payments/**, /api/payments, /api/product, /api/product/**
+            - Path=/api/payments/**, /api/payments
           filters:
             - TokenRelay=
 eureka:
