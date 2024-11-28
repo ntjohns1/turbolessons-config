@@ -5,8 +5,9 @@ management:
         include: '*'
 logging:
   level:
-    root: info
-    com.turbolessons.paymentservice: debug
+    root: INFO
+    org:
+      springframework: INFO
 eureka:
   client:
     serviceUrl:
