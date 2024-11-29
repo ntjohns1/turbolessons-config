@@ -5,8 +5,7 @@ management:
         include: '*'
 logging:
   level:
-    root: DEBUG
-    com.turbolessons: DEBUG
+    root: INFO
 eureka:
   client:
     serviceUrl:
