@@ -5,9 +5,8 @@ management:
         include: '*'
 logging:
   level:
-    root: INFO
-    org:
-      springframework: INFO
+    root: DEBUG
+    com.turbolessons: DEBUG
 eureka:
   client:
     serviceUrl:
