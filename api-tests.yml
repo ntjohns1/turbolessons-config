@@ -6,16 +6,14 @@ management:
 logging:
   level:
     root: INFO
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://service-registry:8761/eureka/
 spring:
   cloud:
     gateway:
       enabled: false
       redis:
         enabled: false
+    discovery:
+      enabled: false
   mustache:
     check-template-location: false
   jackson:
@@ -36,8 +34,3 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://dev-78958050.okta.com/oauth2/default
-#okta:
-#  oauth2:
-#    issuer: '{cipher}AQBFpKram6yI1T/fKIuPGH+n2YD1WTQ0Kd30tUjOSTqN5Sts/NkPsN7RR4+FSxtizbgR7/S8wNh929UjTbYYUxkEjy6KE3NqEWtgRBTEtLe8XUZGxHkZ8i4MgrJ0YEXfkBqiCXG2R22kO8azttk9CjLBhUAX74A4mSaPgqBLpwjMQKzQ5WI/LLCQz7Xlp8xWYIUg7ITdKulxKjCfs5HiiPu3SVnb0rlVRRA7mZfYde2eb/t9juIKPBKCJromXaK5tEYd/4h3rY0ygcPQtwfbUCxUMMe87vTSG26uj75E5EtwpJt+nT86HIJtH+QmNj63d2NbDuV4UZw0oDtASSlg72+Q2Ja0amnARbRIJuMmLx90XOPgrctAw6SFwVsrXL5z29gbS/fyYTcgpM8e7DQZlvfl/LI9+2J02xP9krjRTou2ZQ=='
-#    client-secret: '{cipher}AQCwHzwSeumc+ZHGyhbuTveEAG04N1K90LmHVc/mmibzWNdxZJQGZsBQ1Fwf3FfEIfEUMwP0+YbzupRLiRT+yuN27T4AhDd+kD23l5FfsxrDjVE3IquJRKdpV+TTfNvELfC0tKWxgPZPC+JbLjqap2eOVA9NfzX0p2SGjjfofA/KsQsBUlg2sOf1kuQOIHtJBq2KitkmUxFRNz3sLEraKU1gg9tr6xtiWaaixIVXDTGHZ2UHpBK/xJVKJKLHxBUCK6MugnIaLxmZc45b/2RvYTsfk4pS9jeXVd/OSwMZzYv+m7emVT4oNAHjTtey7mCrOoW9qBV/djrbVFgYFkwkod0/XeahWugOUN93GKR/MYeeYSJZq0n0JfO0hoe95yWxHUsTGkuQ1Hnjy3Mp+7X3wAXmxmdMOFozoG/RsZj/jmfP+g=='
-#    client-id: '{cipher}AQCrkvYtnGR7H/ogFRpio3J9CisG3Jho0T1F6G2uWCjiDtv27n0szC8aBHtUNii+ooVQPIUIDp0t5z37KqWZ1s2j52+Vl/eGsktOa/EoLPkZPOCi3J3hcrJDsRL6VHure206yoiWDTOjsMgnR0PZ+z5BfznvM/Xi/SuqaTI3/TuTfYymB3SPCQr4lNQeBk/s8gWsGV3ANXrJgzZh8+JHbwEXfXFIiS1DUM+VzXD+J4XhFHtfIqdPe6L72CtE5Ht+ZlrU2+/EFPgbfw36CTNZszX2ZtJwbYX2CXk1DLYVovjb7BykVkAG/YUV0WhnLSeVyTYx6hovAV4bIzyVrcXd1+O4giE46N2eamuepmy5T/bNgZo14qoz0pFU75/TAMYtTbcy4xVz2xppF74TJGcDLCrC'
