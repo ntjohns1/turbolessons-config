@@ -45,3 +45,19 @@ event-service:
   url: http://event-service:5001
   endpoints:
     lessons: /api/lessons
+
+# Springdoc OpenAPI Configuration
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+    filter: true
+    oauth:
+      clientId: ${okta.oauth2.client-id}
+      clientSecret: ${okta.oauth2.client-secret}
+      useBasicAuthenticationWithAccessCodeGrant: true
+  api-docs:
+    path: /v3/api-docs
+  show-actuator: true
+  packages-to-scan: com.turbolessons.paymentservice.controller
