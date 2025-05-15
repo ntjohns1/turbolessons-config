@@ -49,12 +49,11 @@ event-service:
 # Springdoc OpenAPI Configuration
 springdoc:
   swagger-ui:
-    path: /api/payments/docs/swagger-ui.html
+    path: /api/payments/swagger-ui.html
     operationsSorter: method
     tagsSorter: alpha
     filter: true
   api-docs:
-    path: /api/payments/docs/v3/api-docs
+    path: /api/payments/v3/api-docs
   show-actuator: true
   packages-to-scan: com.turbolessons.paymentservice.controller
-  paths-to-match: /api/payments/**
