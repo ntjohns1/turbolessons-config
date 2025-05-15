@@ -53,10 +53,6 @@ springdoc:
     operationsSorter: method
     tagsSorter: alpha
     filter: true
-    oauth:
-      clientId: ${okta.oauth2.client-id}
-      clientSecret: ${okta.oauth2.client-secret}
-      useBasicAuthenticationWithAccessCodeGrant: true
   api-docs:
     path: /v3/api-docs
   show-actuator: true
