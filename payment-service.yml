@@ -3,6 +3,17 @@ management:
     web:
       exposure:
         include: '*'
+
+# OpenAPI/Swagger Configuration
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  show-actuator: true
+  packages-to-scan: com.turbolessons.paymentservice.controller
 logging:
   level:
     root: INFO
@@ -45,15 +56,3 @@ event-service:
   url: http://event-service:5001
   endpoints:
     lessons: /api/lessons
-
-# Springdoc OpenAPI Configuration
-springdoc:
-  swagger-ui:
-    path: /api/payments/swagger-ui.html
-    operationsSorter: method
-    tagsSorter: alpha
-    filter: true
-  api-docs:
-    path: /api/payments/v3/api-docs
-  show-actuator: true
-  packages-to-scan: com.turbolessons.paymentservice.controller
