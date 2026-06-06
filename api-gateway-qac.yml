@@ -1,0 +1,28 @@
+# QAC overlay for api-gateway (Spring profile: qac).
+# The config server merges this OVER api-gateway.yml when a client requests
+# profile "qac" (SPRING_PROFILES_ACTIVE=qac). Only values that differ from prod belong here.
+
+cors:
+  allowed-origins:
+    - https://qac.turbolessons.com
+    - http://localhost:3000
+
+# TODO(qac-keycloak): point QAC at the dedicated `turbolessons-qac` Keycloak realm once it
+# exists (realm-per-env isolation). Until then QAC inherits the prod `turbolessons` realm from
+# api-gateway.yml. The issuer URL is public → plaintext; the login client-secret is confidential
+# → encrypt with the recovered keystore via config-service /encrypt before pasting.
+#
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          keycloak:
+#            client-id: REPLACE_WITH_QAC_GATEWAY_CLIENT_ID
+#            client-secret: '{cipher}REPLACE_WITH_QAC_GATEWAY_CLIENT_SECRET'
+#        provider:
+#          keycloak:
+#            issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac
