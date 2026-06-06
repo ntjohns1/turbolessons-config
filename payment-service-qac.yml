@@ -1,0 +1,15 @@
+# QAC overlay for payment-service (profile: qac). Merged over payment-service.yml.
+# Dedicated Keycloak realm 'turbolessons-qac'; client-id (payment-service-m2m) unchanged.
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac
+      client:
+        provider:
+          okta:
+            token-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac/protocol/openid-connect/token
+        registration:
+          okta:
+            client-secret: '{cipher}AQBstlHNcb0+V5mnQbku8havedkxpILttNAwDKUj7d2AtOvLBSounocEILVeZTOiCvXjAuPLeqljehMVQvtqTVi1/3AzN8BBHtMitQTCY4X5jvywSFbkmTmV3lDBQrX3MFsfrGpaZZivbx/EiTutGbX/DiE4TDxonHa+AFuS3VzYHWT7qGRiDyPX6/ogTypWjevrhLX/5EQbcWEB9X1NzhEPlEhLC4uYFLcs3mq3t6cWmMNvrRXBDSSzBzOyg7Osx81T2gqzl4/JHsJj01ztvHsdPLD6t0iPi9s89xEOOLPSgZAtykIfpTmuoIYl2rPbU59b5/p1FqFIzJozyRs8cjNUXrx5ozm1+AsYKJhsw9pXLyZk6XmM3mUPBzELfLFF5VMlqtpAtrW+uEl6D+8gUJWuzq7bJK7gBLYYdnvLHP/XLw=='

@@ -1,0 +1,8 @@
+# QAC overlay for message-service (profile: qac). Merged over message-service.yml.
+# QAC uses the dedicated Keycloak realm 'turbolessons-qac'; only the issuer differs.
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac

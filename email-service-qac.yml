@@ -1,0 +1,12 @@
+# QAC overlay for email-service (profile: qac). Merged over email-service.yml.
+# M2M only (no resource server); client-id (email-service-m2m) unchanged.
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            token-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac/protocol/openid-connect/token
+        registration:
+          okta:
+            client-secret: '{cipher}AQAFAFydarX4dru5a1a5n+bBtHzZx1R+hXPfM2hgylaMW23GrjkglsV3Ph71YdeuXCBRMoaDpkhNkyG0hZDxiU6rjEccrCNznz+hmP5DeEoCnjkZT9B1Vn2ZfnZsrP8t5BmngGrNaWab0wDjYflbnnhd3FqVWRtBEbu+/2AHiYpjD2du+0VJsxAWCesmueV924k7FE04I/TrO/ra0F0jktZywGOUj7vuX212fzUWC+6bBAWzSN5fYVXBFHaDBxZK+CSkzn3TXsONzrug/55Hy9y/2SOJG7GBe8XqzbG6gT4sZVZMFfuxTnJXWBhI+5GIbsTaLJpPgpgRVEWQ3cZRsTjxlRJiYjNOtcUxtU6dgWJwTJxOcUotBnXLv836B7fYp5k5x8xLa9GnWlfpFk8D61g+XcER5p9EwMbQtS7GZU4t6A=='

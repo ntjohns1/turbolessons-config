@@ -1,0 +1,14 @@
+# QAC overlay for api-tests (profile: qac). Merged over api-tests.yml.
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac
+      client:
+        provider:
+          okta:
+            token-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac/protocol/openid-connect/token
+        registration:
+          okta:
+            client-secret: '{cipher}AQAdQswf8x9/mUWOZZ9RcCE4fFROB+WpChyHzwOuoK8WQWyL2R86CXYCyoaWmFj2NWPDBVJeLf/fzzQIaNF+A5pOlZLsmm0MFzXmQVyWZ0J+FubTTNq+sl4BIyYr2AVnUOK2e8hP80rXvydQd3gKqZ93YLXKOEAZ2wlk3qK0Uvvb+CPey3NJW7w9OvyaHss13pTlCSCX84CClhfvDyORvrNB33mc/DxL0GzFFM75Q4Ddt7qLTpQOuK6CvkhLBdYn6DAjNT/efeql5xx8cZLA8I9ZFxx/ExnglNp+jX2GUJmlqCn0SUPGfyPFYfLKTqycDiq7aCZcLMqU5BaVBRq7NgwA3TRunLNAhoPrBIa1fk5KqT8w+RXp/Jf+8dzdC8kV7uyY9JfHHRuODg1fba2dPeZlXsbw9WXZTF3MlBcQ0IGgjA=='
