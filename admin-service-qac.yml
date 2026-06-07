@@ -6,3 +6,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://auth.nelsonjohns.com/realms/turbolessons-qac
+keycloak:
+  admin:
+    realm: turbolessons-qac
+    client-secret: '{cipher}AQBhWh5tVAgs5nV/xqKRR9dUtgXuZ6puL8pBowzS6AQCrAPCiCpqa7LKR8inFH8LPuxJHdcy6J5v5DlEmb4y5lPNeWaKxv249zWi1k5dqhZjUWLUJIC7/gdnpJS0v/tDZmJX5tsIOX8NSGcxXMYO8EAugobW/SEtAyADVRVu0+eI5aMJj8RMovoDhTwh6wRbalRIKGcJL202bm8t/fd6vuoWBD/OUurGTfq8mr2yNEJqCoXfGZltOQNv0HhQMDaRJ3+bRWALrj2w1NvWamAM1ypquOe4fIuW+l6yGvvIlu2Knf29nDsgwn82XFDVXlKHLE0iGEFeSfuBk1cG1UT69eZTGfa5YsQYSoqJGmfO4ES5Q9GWXi5wN3i8+iJ6f3K+PujfWZRfqPSa45A2xal13yEbP/Ef4AL9cRLl+tN23TANnA=='

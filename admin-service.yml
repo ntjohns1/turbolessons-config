@@ -20,6 +20,13 @@ spring:
         enabled: false
   mustache:
     check-template-location: false
+# admin-service -> Keycloak Admin REST API (KeycloakAdminProperties: keycloak.admin.*)
+keycloak:
+  admin:
+    server-url: https://auth.nelsonjohns.com
+    realm: turbolessons
+    client-id: admin-service-kc
+    client-secret: '{cipher}AQB7JxiMt0Hb1rT7OJnh2HhXZHzqjbjw1dgRbWPb2jfgQjGDAKhYvgpJcYRCvJlzyq1pmQr5NN2DT6WY9SLVI0wDnqeQNQoBcToefwNZ5j/WCYL3VvjgTHp8fZt2UrtnfRHCihgz9upciurts+hcKeW8lqTGtMWafAHlvuhtHTO4zNo49ENUv1rAsMe0QVdd8BnLDgPTrgdKLmwyKqgAHUB3ceh1Ac5L/osXESjHwZuf8ukiWhkXS9z1I+eUTGL5jFujze92+9IrLxdX6JO5xCWlJfGcJp5ZYgNwHkK1LOXgprG9sTbibraNuILkNV0DUxulu+OGQ/A/d7CYQel0qfMAzZQ+29SHsu47a7Dt72XGuGhZGKjvFTOzwxJxvdPXuPE6Gh7aIVqOBScSPFQ6aUQ87RhKPHxpvMR49PWuQwxIiw=='
 logging:
   level:
     root: INFO
