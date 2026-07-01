@@ -3,10 +3,11 @@
 # profile "qac" (SPRING_PROFILES_ACTIVE=qac). Only values that differ from prod belong here.
 # QAC uses the dedicated Keycloak realm 'turbolessons-qac'; login client-id (api-gateway) unchanged.
 
+# Comma-separated so the gateway's @Value("${cors.allowed-origins}") -> List<String>
+# binds correctly (a YAML list is not resolvable by @Value and silently falls back
+# to the code default, which omits qac -> CORS 403 on same-origin POSTs).
 cors:
-  allowed-origins:
-    - https://qac.turbolessons.com
-    - http://localhost:3000
+  allowed-origins: https://qac.turbolessons.com,https://www.turbolessons.com,http://localhost:3000
 
 spring:
   security:
